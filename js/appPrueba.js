@@ -39,7 +39,6 @@ function buscarJugadoresPromesas() {
                 <p><strong>Nacionalidad:</strong> ${person.strNationality}</p>
                 <p><strong>Equipo:</strong> ${person.strTeam || 'Sin equipo registrado'}</p>
                 <p><strong>Posición:</strong> ${person.strPosition || 'No especificada'}</p>
-                <p><strong>Goles:</strong> ${person.idLiveScore || '0'}</p>
                 ${person.strThumb ? `<img src="${person.strThumb}" alt="${person.strPlayer}" width="150" style="border-radius: 8px; margin-top: 10px;">` : ''}
             `
         })
