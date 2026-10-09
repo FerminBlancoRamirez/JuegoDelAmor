@@ -32,3 +32,4 @@ export function calcularEdad(fechaNacimientoStr) {
     
     return isNaN(edad) ? 'Desconocida' : `${edad} años`;
 }
+
