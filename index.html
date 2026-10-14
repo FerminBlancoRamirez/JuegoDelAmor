@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juego Del Amor - Adivina el Futbolista</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+</head>
+<body>
+  <div class="card">
+    <h1>⚽ Juego Del Amor</h1>
+
+    <div class="info">
+      <div>
+        Racha: <strong id="racha">0</strong> 🔥
+      </div>
+      <div>
+        Intentos: <strong id="intentos">5</strong> ❤️
+      </div>
+    </div>
+
+    <button id="btn-iniciar">🎮 Empezar Nueva Partida</button>
+
+    <hr />
+
+    <h3>Pistas Reveladas:</h3>
+    <ul id="pistas">
+      <li>Presiona "Empezar Nueva Partida" para cargar pistas...</li>
+    </ul>
+
+    <div class="guess-area">
+      <input
+        type="text"
+        id="input-nombre"
+        placeholder="Nombre del futbolista..."
+        autocomplete="off"
+      />
+      <button id="btn-enviar">Comprobar</button>
+    </div>
+
+    <p id="mensaje">¡Listo para jugar!</p>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

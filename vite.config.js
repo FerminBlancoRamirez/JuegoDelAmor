@@ -1,6 +1,13 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  // Reemplaza 'nombre-del-repositorio' por el nombre exacto de tu repo en GitHub
   base: "/JuegoDelAmor/",
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+  },
+  server: {
+    port: 3000,
+    open: true,
+  },
 });
