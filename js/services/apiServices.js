@@ -14,8 +14,8 @@ export async function iniciarNuevaPartida() {
     const indiceAleatorio = Math.floor(Math.random() * futbolistasActuales.length);
     const nombreBuscado = futbolistasActuales[indiceAleatorio];
 
-const urlApi = `https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${encodeURIComponent(nombreBuscado)}`;
-const url = `https://corsproxy.io/?${encodeURIComponent(urlApi)}`;
+    const urlApi = `https://www.thesportsdb.com/api/v1/json/1/searchplayers.php?p=${encodeURIComponent(nombreBuscado)}`;
+    const url = `https://corsproxy.io/?${encodeURIComponent(urlApi)}`;
     try {
         const response = await fetch(url);
         if (!response.ok) throw new Error("Error en la llamada a la API");
